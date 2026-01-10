@@ -18,4 +18,3 @@ This repository contains the security implementation and monitoring tools develo
 3. Run `npm install` in the terminal to install the configurations from **package.json**.
 4. Run `node validate.js` to test the input validation.
 5. Check `security.log` to see the recorded security alerts.
-
