@@ -15,4 +15,5 @@ logger.info('Application started');
 const maliciousInput = "admin'--"; 
 logger.warn(`SECURITY ALERT: Blocked SQL Injection attempt: ${maliciousInput}`);
 
+
 console.log("\n--- TASK COMPLETE: Check your folder for security.log ---");
