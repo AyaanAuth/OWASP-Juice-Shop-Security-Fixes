@@ -1,24 +1,40 @@
-📝 Project Overview
-This repository contains the security enhancements and audit reports for a Node.js web application. The goal was to transition the application from a vulnerable state to a hardened, production-ready environment compliant with OWASP standards.
-
-⚔️ Week 5: Ethical Hacking & Remediation
-
-SQL Injection (SQLi): Conducted reconnaissance using Nmap and identified vulnerabilities via SQLMap.
+⚔️ Week 5: Ethical Hacking & Exploiting Vulnerabilities
+📌 Overview
+Utilized penetration testing toolkits to identify, exploit, and remediate application-level flaws.
 
 
-Remediation: Replaced dynamic SQL strings with Prepared Statements to eliminate injection risks.
-
-CSRF Protection: Integrated middleware to protect state-changing requests from forgery attacks.
-
-🔍 Week 6: Advanced Audits & Compliance
-
-OWASP ZAP: Conducted an automated scan identifying 5 key alerts, including missing CSP directives.
+Reconnaissance: Conducted service detection using Nmap, identifying port 80/tcp as the primary entry point.
 
 
-Nikto: Performed a web server audit to verify header configurations.
+SQL Injection (SQLi): Used SQLMap to successfully extract database names such as acuart and information_schema.
 
 
-Lynis: Conducted a system-level audit, achieving a Hardening Index of 62.
+Remediation: Neutralized threats by replacing vulnerable dynamic strings with Prepared Statements.
 
 
-Dependency Scanning: Patched a low-severity vulnerability in the qs library, resulting in 0 vulnerabilities for final deployment.
+CSRF Protection: Implemented and verified protection against forgery attacks using Burp Suite.
+
+🔍 Week 6: Advanced Security Audits & Final Deployment
+📌 Overview
+Conducted final automated auditing and verified dependency integrity to certify the application for deployment.
+
+
+OWASP ZAP Audit: Identified 5 key alerts, allowing for final refinement of CSP directives.
+
+
+Nikto Scan: Verified header configurations and identified information leakage via the X-Powered-By header.
+
+
+System Audit (Lynis): Achieved a system Hardening Index of 62 on the host environment.
+
+
+Dependency Remediation: Patched a vulnerability in the qs library via npm audit fix, achieving 0 vulnerabilities for final deployment.
+
+📦 Deliverables in this Repository
+
+server.js: Secured Node.js API with Rate-Limiting, CORS, and Security Headers.
+
+
+sshd-jail.conf: Custom Fail2Ban configuration for SSH monitoring.
+
+package.json: Contains security dependencies (helmet, cors, express-rate-limit).
