@@ -1,4 +1,6 @@
 ⚔️ Week 5: Ethical Hacking & Exploiting Vulnerabilities
+
+
 📌 Overview
 Utilized penetration testing toolkits to identify, exploit, and remediate application-level flaws.
 
@@ -15,6 +17,8 @@ Remediation: Neutralized threats by replacing vulnerable dynamic strings with Pr
 CSRF Protection: Implemented and verified protection against forgery attacks using Burp Suite.
 
 🔍 Week 6: Advanced Security Audits & Final Deployment
+
+
 📌 Overview
 Conducted final automated auditing and verified dependency integrity to certify the application for deployment.
 
@@ -31,6 +35,7 @@ System Audit (Lynis): Achieved a system Hardening Index of 62 on the host enviro
 Dependency Remediation: Patched a vulnerability in the qs library via npm audit fix, achieving 0 vulnerabilities for final deployment.
 
 📦 Deliverables in this Repository
+
 
 server.js: Secured Node.js API with Rate-Limiting, CORS, and Security Headers.
 
